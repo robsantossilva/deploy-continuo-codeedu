@@ -1,0 +1,9 @@
+- id: "Rodando install"
+  name: "gcr.io/cloud-builders/go"
+  args: ["install", "app"]
+  env: ["GOPATH=."]
+
+- id: "Rodando Test"
+  name: "gcr.io/cloud-builders/go"
+  args: ["test", "app"]
+  env: ["GOPATH=."]
